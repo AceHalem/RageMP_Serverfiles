@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+}
+
+.clock {
+    clear: both;
+    margin: auto;
+    width: 100%;
+    top: 0;
+    color: #FFF;
+    left: 0;
+    transition: top 250ms;
+}
+.clock>.inner {
+    margin: auto;
+    line-height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.clock>.inner>.time {
+    width: 10%;
+    line-height: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.clock>.inner>div.left {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 0;
+    border-color: transparent rgba(0, 0, 0, 0.8) transparent transparent;
+    padding: 0;
+    background: none;
+}
+.clock>.inner>div.right {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 0;
+    border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+    padding: 0;
+    background: none;
+}
+.NameAnzeige {
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    padding: 0.3vw;
+    color: #fff;
+    width: 8vw;
+    border-radius: 0.1vw;
+    top: 3.5vw;
+    left: 90%;
+}
+
+.MoneyAnzeige {
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    padding: 0.3vw;
+    color: #fff;
+    width: 8vw;
+    border-radius: 0.1vw;
+    top: 5vw;
+    left: 90%;
+}
+
+.BankAnzeige {
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    padding: 0.3vw;
+    color: #fff;
+    width: 8vw;
+    border-radius: 0.1vw;
+    top: 6.49vw;
+    left: 90%;
+}
+
+.WantedAnzeige {
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    padding: 0.3vw;
+    color: #fff;
+    width: 8vw;
+    border-radius: 0.1vw;
+    top: 7.98vw;
+    left: 90%;
+}
+
+.MicroAnzeige {
+	text-align: center;
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    padding: 0.3vw;
+    color: #fff;
+    width: 1.5vw;
+    border-radius: 0.1vw;
+    top: 9.5vw;
+    left: 96.5%;
+}
+
+.name {
+    position: absolute;
+    right: 0.5vw;
+	text-align: center;
+    font-family: Arial;
+    font-size: 0.75vw;
+    top: 0.3vw;
+    font-weight: 600;
+    letter-spacing: -0.01vw;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.money {
+    position: absolute;
+    right: 0.5vw;
+    font-family: Arial;
+    font-size: 0.75vw;
+    top: 0.3vw;
+    font-weight: 600;
+    letter-spacing: -0.01vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bank {
+    position: absolute;
+    right: 0.5vw;
+    font-family: Arial;
+    font-size: 0.75vw;
+    top: 0.3vw;
+    font-weight: 600;
+    letter-spacing: -0.01vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wanted {
+    position: absolute;
+    right: 0.5vw;
+    font-family: Arial;
+    font-size: 0.9vw;
+    top: 0.2vw;
+    font-weight: 600;
+    letter-spacing: -0.01vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.vOn {
+    color: green;
+}
+
+.vOff {
+    color: red;
+}

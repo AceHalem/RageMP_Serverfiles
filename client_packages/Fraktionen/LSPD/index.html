@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    
+    <!--<script src="../static/js/js/jquery-3.3.1.min.js"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--<script src="../static/css/bootstrap-3.3.7/js/bootstrap.min.js"></script>-->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+	<!--<link rel="stylesheet" href="../static/css/bootstrap-3.3.7/css/bootstrap.min.css">-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="userpanel.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	
+    <meta charset="utf-8" />
+</head>
+<style>
+		#InputEndziffer {
+			background-color: black;
+			border-color: #4263f5;
+			color: #4263f5;
+			border-radius: 2px;
+			text-align: center;
+		}
+		
+		#lname {
+			background-color: black;
+			border-color: #4263f5;
+			color: #4263f5;
+			border-radius: 2px;
+			text-align: center;
+			margin-left: 5px;
+		}
+		
+		#fname {
+			background-color: black;
+			border-color: #4263f5;
+			color: #4263f5;
+			border-radius: 2px;
+			text-align: center;
+		}
+</style>
+<body>
+	<div class="container">		
+	<center>
+		<div class="bar2">LSPD - Computer</div>
+	</center>
+	<div class="content">
+	<ul class="tabs">
+				<li class="tab-link current" data-tab="tab-1" style="margin-left:40px;">Ns. Prüfen</li>
+				<li class="tab-link" data-tab="tab-2"style="margin-left:10px;">Spielerakte</li>
+			</ul>
+			
+			
+			<!-- Willkommen Menu -->
+			<div id="tab-1" class="tab-content current">
+			<center>
+				<span>
+					<p>Gib hier das Nummernschild ein um den Besitzer ausfindig zu machen.</p>
+					</br>
+
+					<p>LS-<input id="InputEndziffer" maxlength="3" placeholder="z.b ABC" required="true"></p>
+					<p>Fahrzeughalter: <span id="namelabel"></span></p>
+					</br>
+					<button id="AcceptBtn" type="button" class="btn btn-success">Bestätigen</button>
+					<button id="CloseBtn" type="button" class="btn btn-danger ">Schließen</button>
+				</span>
+			</center>
+			</div>
+			<div id="tab-2" class="tab-content">
+			<center>
+				<span>
+					<p>Gib den Vor- und Nachnamen ein um Daten über diese Person zu erhalten.</p>
+					</br>
+					<p><input id="fname" maxlength="20" placeholder="Vorname" required="true"><input id="lname" maxlength="20" placeholder="Nachname" required="true"></p></br>
+					<p><span id="namelabel2">Wird gesucht...</span></p>
+					<p>Status: <span id="wantedlabel"></span></p>
+					<p>Vermögen: <span id="moneylabel"></span></p>
+					<p>Fahrzeuge: <span id="vehlabel"></span></p>
+					<p>Beruf: <span id="fraklabel"></span></p></br>
+					<button id="AcceptBtn2" type="button" class="btn btn-success">Bestätigen</button>
+					<button id="CloseBtn2" type="button" class="btn btn-danger ">Schließen</button>
+				</span>
+			</center>
+			</div>
+		</div>
+	</div><!-- container -->
+	<script src="switch.js" type="text/javascript"></script>
+	<script src='./Click.js'></script>
+</body>
+</html>

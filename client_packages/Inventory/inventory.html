@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventar</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <style>
+        body {
+			background: transparent;
+        }
+
+        #container {
+            margin-top: 10%;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            height: 20%;
+			background-color: rgb(255, 255, 255);
+			border-radius: 3px;
+			border: 3px solid #f54242;
+        }
+
+        th, td {
+            width: 1000px;
+        }
+		
+        thead > tr {
+            position: relative;
+            display: block;
+			width: 100%;
+			color: white;
+        }
+
+        tbody {
+            display: block;
+            max-height: 600px;
+            overflow: auto;
+        }
+
+        #close {
+            text-align: right;
+        }
+
+        #close button {
+            margin-bottom: 7px;
+            margin-right: 7px;
+        }
+
+    </style>
+</head>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+	<div id="container">
+		<table class="table" id="items">
+			<thead style="background-color: #f54242;">
+			<tr style="text-align: center;">
+				<th scope="col">Item</th>
+				<th scope="col">Kategorie</th>
+				<th scope="col">Seltenheit</th>
+				<th scope="col">Volumen</th>
+				<th scope="col">Gewicht (kg)</th>
+				<th scope="col">Anzahl</th>
+			</tr>
+			</thead>
+			<tbody id="tbody">
+			</tbody>
+		</table>
+	
+		<div id="close">
+			<button type="button" class="btn btn-dark" style="background-color: #f54242;">Schließen</button>
+		</div>
+	</div>
+	
+	<script>
+		$(document).ready(function () {
+			mp.trigger("loadItems");
+		});
+	
+		function loadItems(items) {
+			var table = document.getElementById("tbody");
+	
+			items.forEach(function (item) {
+				var row = table.insertRow(-1);
+				row.setAttribute("data-type-id", item.typeId);
+	
+				var name = row.insertCell(0);
+				name.innerHTML = item.name;
+				name.id = "name";
+	
+				row.insertCell(1).innerHTML = item.category;
+				row.insertCell(2).innerHTML = item.rarity;
+				row.insertCell(3).innerHTML = item.volume;
+				row.insertCell(4).innerHTML = item.weight;
+				row.insertCell(5).innerHTML = item.amount;
+			});
+		}
+	
+		$("#close button").click(function () {
+			mp.trigger("closeInventory");
+		});
+	</script>
+</body>
+</html>

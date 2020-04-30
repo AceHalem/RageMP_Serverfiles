@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Roleplay": {
+      "commandName": "Executable",
+      "executablePath": "%USERPROFILE%\\Documents\\GitHub\\ragemp\\server.exe",
+      "workingDirectory": "%USERPROFILE%\\Documents\\GitHub\\ragemp"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\bridge",
+    "\\bridge\\resources",
+    "\\bridge\\resources\\Roleplay",
+    "\\bridge\\resources\\Roleplay\\bin\\Debug",
+    "\\bridge\\resources\\Roleplay\\obj\\Release",
+    "\\bridge\\resources\\Roleplay\\obj\\Release\\netcoreapp2.1",
+    "\\client_packages",
+    "\\client_packages\\Nametags"
+  ],
+  "SelectedNode": "\\client_packages\\index.js",
+  "PreviewInSolutionExplorer": false
+}

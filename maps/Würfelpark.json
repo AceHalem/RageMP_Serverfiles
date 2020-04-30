@@ -1,0 +1,984 @@
+{
+  "Map": {
+    "-xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "-xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+    "Objects": {
+      "MapObject": [
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "151.59",
+            "Y": "-986.83",
+            "Z": "29.09192"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "153.37",
+            "Y": "-987.47",
+            "Z": "29.09192"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "155.06",
+            "Y": "-988.1",
+            "Z": "29.09192"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "156.78",
+            "Y": "-988.73",
+            "Z": "29.09192"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "158.482529",
+            "Y": "-989.349854",
+            "Z": "29.09192"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "160.214783",
+            "Y": "-989.9713",
+            "Z": "29.09192"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "161.95",
+            "Y": "-990.61",
+            "Z": "29.09192"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "163.67",
+            "Y": "-991.24",
+            "Z": "29.09192"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "165.368271",
+            "Y": "-991.87",
+            "Z": "29.09192"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "167.11",
+            "Y": "-992.49",
+            "Z": "29.09192"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "168.82",
+            "Y": "-993.11",
+            "Z": "29.09192"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "170.54",
+            "Y": "-993.73",
+            "Z": "29.09192"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "218.45",
+            "Y": "-955.9397",
+            "Z": "29.09192"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "219.55",
+            "Y": "-954.39",
+            "Z": "29.09192"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "220.63",
+            "Y": "-952.86",
+            "Z": "29.09192"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "221.734573",
+            "Y": "-951.299133",
+            "Z": "29.09192"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "222.8357",
+            "Y": "-949.744751",
+            "Z": "29.09192"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "223.94",
+            "Y": "-948.19",
+            "Z": "29.09192"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "236.63",
+            "Y": "-895.45",
+            "Z": "29.6920071"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "235",
+            "Y": "-894.27",
+            "Z": "29.6920071"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "233.423813",
+            "Y": "-893.1245",
+            "Z": "29.6920071"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "231.8",
+            "Y": "-891.93",
+            "Z": "29.6920071"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "230.18",
+            "Y": "-890.75",
+            "Z": "29.6920071"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "228.59",
+            "Y": "-889.59",
+            "Z": "29.6920071"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "226.9",
+            "Y": "-888.36",
+            "Z": "29.6920071"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "225.38",
+            "Y": "-887.26",
+            "Z": "29.6920071"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "223.76",
+            "Y": "-886.09",
+            "Z": "29.6920071"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "222.14",
+            "Y": "-884.91",
+            "Z": "29.6920071"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "220.47",
+            "Y": "-883.72",
+            "Z": "29.6920071"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "218.87",
+            "Y": "-882.56",
+            "Z": "29.6920071"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "168.44",
+            "Y": "-911.64",
+            "Z": "29.6920071"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "167.813232",
+            "Y": "-913.340637",
+            "Z": "29.6920071"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "167.17",
+            "Y": "-915.1",
+            "Z": "29.6920071"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "166.53",
+            "Y": "-916.83",
+            "Z": "29.6920071"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "165.88",
+            "Y": "-918.56",
+            "Z": "29.6920071"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "165.24",
+            "Y": "-920.28",
+            "Z": "29.6920071"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "179.689682",
+            "Y": "-874.2672",
+            "Z": "30.1164551"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "179.01",
+            "Y": "-876.11",
+            "Z": "30.1164551"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "178.31",
+            "Y": "-877.97",
+            "Z": "30.1164513"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "177.64",
+            "Y": "-879.88",
+            "Z": "30.1164532"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "177.04",
+            "Y": "-881.55",
+            "Z": "30.1164474"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "176.39",
+            "Y": "-883.3",
+            "Z": "30.1164455"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "175.74",
+            "Y": "-885.04",
+            "Z": "30.11644"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        },
+        {
+          "Type": "Prop",
+          "Position": {
+            "X": "175.14",
+            "Y": "-886.63",
+            "Z": "30.1164379"
+          },
+          "Rotation": {
+            "X": "0",
+            "Y": "-0",
+            "Z": "0"
+          },
+          "Hash": "37760292",
+          "Dynamic": "false",
+          "Quaternion": {
+            "X": "0",
+            "Y": "0",
+            "Z": "0",
+            "W": "1"
+          },
+          "Door": "false"
+        }
+      ]
+    },
+    "Metadata": {
+      "Creator": "Zmileey",
+      "Name": "Nameless Map",
+      "LoadingPoint": { "-xsi:nil": "true" },
+      "TeleportPoint": { "-xsi:nil": "true" }
+    }
+  }
+}

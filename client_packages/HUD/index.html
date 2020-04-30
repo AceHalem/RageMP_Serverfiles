@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link href="hud.css" rel="stylesheet">
+    </head>
+    <body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+        <div id="timerClock">
+            <div class="clock">
+                <div class="inner">
+                    <div class="left" style="border-color: transparent #f54242 transparent transparent;"></div>
+                    <div class="progressbar"></div>
+                    <div class="left" style="border-color: transparent rgba(0, 0, 0, 0.8) #f54242 transparent;"></div>
+                    <div class="time" id="timerTime" style="background: rgba(0, 0, 0, 0.8); width: calc(9% + 60px)">TestServer</div>
+                    <div class="right" style="border-color: rgba(0, 0, 0, 0.8) #f54242 transparent transparent;"></div>
+                    <div class="progressbar"></div>
+                    <div class="right" style="border-color: #f54242 transparent transparent transparent;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="clock" id="timeClock">
+            <div class="inner">
+                <div class="left"></div>
+                <div class="time" id="time"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+		
+		<div class="NameAnzeige" id="NameAnzeige">
+            <i class="fas fa-user"></i>
+            <div class="name">
+				<div class="inner">
+					<span></span><span id="namelabel"></span>
+				</div>	
+			</div>		
+		</div>
+		<div class="MoneyAnzeige" id="MoneyAnzeige">
+            <i style="color:#b8f788;" class="fas fa-money-bill-wave"></i>
+            <div class="money">
+				<div class="inner">
+					<span></span><span id="moneylabel">0</span>
+				</div>	
+			</div>		
+		</div>
+		<div class="BankAnzeige" id="BankAnzeige">
+            <i style="color:#3492eb;" class="fas fa-money-bill-wave"></i>
+            <div class="bank">
+				<div class="inner">
+					<span></span><span id="banklabel">0</span>
+				</div>	
+			</div>		
+		</div>
+		<div class="WantedAnzeige" id="WantedAnzeige">
+			
+				<i style="color:yellow;" class="fas fa-star"></i>
+				<div class="wanted">
+				<div class="inner">
+					<span id="starhud">0</span>
+					<span style="color:#ffeb3b;"></span>
+				</div>
+			</div>	
+		</div>
+		<div class="MicroAnzeige" id="MicroAnzeige" style="">
+			<span id="voice" class="vOff"><i class="fas fa-microphone"></i><p style="color: white; margin-bottom: 1; margin-top: 1; font-weight: bold;">F4</p></span>
+		</div>	
+        <script src="timer.js" type="text/javascript"></script>
+    </body>
+	<script>
+	
+	</script>
+</html>
+
+
+

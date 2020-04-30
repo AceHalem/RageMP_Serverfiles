@@ -1,0 +1,32 @@
+body {
+  margin:0px;
+}
+
+.id-card-wrapper {
+	text-align: center;
+}
+
+.id-card {
+  flex-basis: 100%;
+  max-width: 30em;
+  border: 1px solid black;
+  margin: auto;
+  color: black;
+  background-color: white;
+  box-shadow: 0px 0px 1px 1px black;
+  border-radius: 3px;
+}
+
+.profile-row .desc {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 1px;
+}
+.profile-row .desc h1 {
+  margin: 0px;
+}
+
+h5 {
+  margin: 0px;
+}

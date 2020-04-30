@@ -1,0 +1,123 @@
+﻿<meta>
+  <info name="Roleplay" author="LiveYourDream" type="script" />
+  
+  
+  <!-- MySql -->
+  <assembly ref="MySql.Data.dll"/>
+  <assembly ref="System.Data.Common.dll"/>
+  <assembly ref="BouncyCastle.Crypto.dll"/>
+  <assembly ref="Google.Protobuf.dll"/>
+  
+  <!-- JSON -->
+  <assembly ref="Newtonsoft.Json.dll"/>
+
+  <!-- Hashing -->
+  <assembly ref="System.Security.Cryptography.Algorithms.dll"/>
+  <assembly ref="System.Security.Cryptography.Csp.dll"/>
+  <assembly ref="System.Security.Cryptography.Primitives.dll"/>
+  <!--<assembly ref="System.Security.Cryptography.RandomNumberGenerator.dll"/>
+  <assembly ref="System.Security.Permissions.dll"/>
+
+  <assembly ref="System.Security.AccessControl.dll"/>
+  <assembly ref="System.Security.Claims.dll"/>
+  <assembly ref="System.Security.Cryptography.Cng.dll"/>
+  <assembly ref="System.Security.Cryptography.Encoding.dll"/>
+  <assembly ref="System.Security.Cryptography.OpenSsl.dll"/>
+  <assembly ref="System.Security.Cryptography.X509Certificates.dll"/>
+  <assembly ref="System.Security.Principal.dll"/>
+  <assembly ref="System.Security.Principal.Windows.dll"/>
+  <assembly ref="System.Security.SecureString.dll"/>
+  <assembly ref="System.Net.Security.dll"/>-->
+
+  <!-- Allgemein -->
+  <script src="Log.cs"/>
+  <script src="Chat.cs"/>
+  
+  <!-- Init -->
+  <script src="Init/Init.cs"/>
+
+  <!-- Databse -->
+  <script src="DatabaseAPI/Initializer.cs"/>
+  <script src="DatabaseAPI/API.cs"/>
+ 
+  <!-- Money -->
+  <script src="MoneyAPI/API.cs"/>
+  
+  <!-- Permissions -->
+  <script src="PermissionAPI/API.cs"/>
+  
+  <!-- Inventory -->
+  <script src="InventoryAPI/API.cs"/>
+  <script src="InventoryAPI/Item.cs"/>
+  <script src="InventoryAPI/BasicItem.cs"/>
+  <script src="InventoryAPI/StaticItem.cs"/>
+  
+  <!-- Shops -->
+  <script src="Shops/CarShops.cs"/>
+  <script src="Shops/BikeShops.cs"/>
+  <script src="Shops/BoatShops.cs"/>
+  <script src="Shops/VanShops.cs"/>
+  <script src="Shops/AirShops.cs"/>
+  <script src="Shops/Blips.cs"/>
+  <script src="Shops/Events.cs"/>
+  <script src="Shops/Marker.cs"/>
+  <script src="Shops/Shops.cs"/>
+  <script src="Shops/Main.cs"/>
+  <script src="Shops/Kleidung.cs"/>
+  
+  <!-- Admin -->
+  <script src="AdminTools/Commands.cs"/>
+  
+  <!-- Login -->
+  <script src="Login/Character.cs"/>
+  <script src="Login/Commands.cs"/>
+  <script src="Login/LoginHandler.cs"/>
+  <script src="Login/Password.cs"/>
+
+  <!-- Vehicles -->
+  <script src="Vehicles/Vehicles.cs"/>
+  <script src="Vehicles/InitNew.cs"/>
+  <script src="Vehicles/Garage.cs"/>
+
+  <!-- Housing -->
+  <script src="Housesystem/API.cs" />
+  <script src="Housesystem/Commands.cs" />
+  <script src="Housesystem/House.cs" />
+
+  <!-- Map -->
+  <script src="Map/DelObj.cs" />
+
+  <!-- Fraktionssystem -->
+  <script src="Fraktionssystem/API.cs" />
+  <script src="Fraktionssystem/LabelMarker.cs" />
+  <script src="Fraktionssystem/Commands.cs" />
+  <script src="Fraktionssystem/Functions.cs" />
+
+  <!-- Player -->
+  <script src="Player/PlayerEvent.cs" />
+  <script src="Player/Commands.cs" />
+  <script src="Player/PlayerTime.cs" />
+  <script src="Player/PlayerUpdate.cs" />
+
+  <!-- Jobs -->
+  <script src="Jobs/Main.cs" />
+  <script src="Jobs/Trucker/Route.cs" />
+  <script src="Jobs/Taxi/Main.cs" />
+  <script src="Jobs/Müllabfuhr/Main.cs" />
+  <script src="Jobs/Gärtner/Gärtner.cs" />
+  <script src="Jobs/Busfahrer/Route.cs" />
+  <script src="Jobs/Hanfsammeln/Main.cs" />
+
+  <!-- Bank -->
+  <script src="BankAPI/BlipsMarker.cs" />
+  <script src="BankAPI/Event.cs" />
+  <script src="BankAPI/API.cs" />
+
+  <!-- Fahrschule -->
+  <script src="Fahrschule/Main.cs" />
+
+  <!-- Staat -->
+  <script src="Staat/LAB.cs" />
+  <script src="Staat/Functions.cs" />
+
+</meta>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    
+    <!--<script src="../static/js/js/jquery-3.3.1.min.js"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--<script src="../static/css/bootstrap-3.3.7/js/bootstrap.min.js"></script>-->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+	<!--<link rel="stylesheet" href="../static/css/bootstrap-3.3.7/css/bootstrap.min.css">-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="userpanel.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	
+    <meta charset="utf-8" />
+</head>
+<style>
+		#loginButton {
+			background-color: white;
+			border-color: #c73636;
+			color: #f54242;
+			width: 50%;
+			margin-left: 25%;
+		}
+		#loginButton:hover {
+			background-color: #ededed;
+			border-color: #c73636;
+			color: #c73636;
+		}
+</style>
+<body>
+	<div class="container">		
+	<center>
+		<div class="bar2">Userpanel</div>
+	</center>
+	<div class="content">
+			<ul class="tabs">
+				<li class="tab-link current" data-tab="tab-1" style="margin-left:40px;">Spieler</li>
+				<li class="tab-link" data-tab="tab-2"style="margin-left:10px;">Lizenzen</li>
+				<li class="tab-link" data-tab="tab-3"style="margin-left:10px;">Fahrzeuge</li>
+				<li class="tab-link" data-tab="tab-4"style="margin-left:10px;">Einstellungen</li>
+			</ul>
+			
+			<!-- Willkommen Menu -->
+			<div id="tab-1" class="tab-content current">
+			<center>
+				<span>
+					<p>Benutzername: <span id="namelabel">NoneNone</span></p>
+					<p>Fraktion: <span id="fraklabel">Bürger</span></p>
+					<p>Vermögen: <span id="moneylabel">0</span><span style="color: #11cc00;">$</span></p>
+					<p>Payday: <span id="paydaylabel">0</span>/60</p>
+					<p>Registriert seit: <span id="registerlabel">0</span></p>
+				</span>
+			</center>
+			</div>
+			<!-- Seite 1 -->
+			<div id="tab-2" class="tab-content">
+				<center>
+				<p>Führerschein: <span id="autoscheinlabel">Nicht vorhanden</span></p>
+				<p>Waffenschein: <span id="waffenscheinlabel">Nicht vorhanden</span></p>
+				</center>
+			</div>
+			<div id="tab-3" class="tab-content">
+				<center>
+				<div class="menu-body">
+                <div class="menu-loading">
+                    <p id="text-loading" class="text-center">Fahrzeuge werden geladen...</p>
+                </div>
+                <div id="optionVehicle">
+                    <div class="menu-loaded" id="menu-loaded">
+
+                    </div>
+                </div>
+            </div>
+				</center>
+			</div>
+			<div id="tab-4" class="tab-content">
+				<center>
+				<ul class="tabs">
+					<li class="tab-link current" data-tab="tab-5" style="margin-left:40px;">Passwort ändern</li></br>
+					<li class="tab-link current" data-tab="tab-6" style="margin-left:40px;">Gameplay Einstellungen</li>
+				</ul>
+				</center>
+			</div>
+			<div id="tab-5" class="tab-content">
+				<center>
+				<div class="input-group mb-3">
+					<input id="loginPasswordText" type="password" class="form-control" placeholder="Altes Passwort" maxlength="10" minlength="3">
+				</div>
+				<div class="input-group mb-3">
+					<input id="loginPasswordText" type="password" class="form-control" placeholder="Neues Passwort" maxlength="10" minlength="3">
+				</div>
+				<div class="input-group mb-3">
+					<input id="loginPasswordText" type="password" class="form-control" placeholder="Neues Passwort wiederholen" maxlength="10" minlength="3">
+				</div>
+				<div class="row">
+					<button id="loginButton" type="button" class="btn btn-primary btn-block">Passwort ändern</button>
+				</div>
+				</center>
+			</div>
+			<div id="tab-6" class="tab-content">
+				<center>
+				<p>HUD anzeigen: <input checked="checked" type="checkbox" onclick="validate()" /></p>
+				</center>
+			</div>
+		</div>
+	</div><!-- container -->
+    <script src="switch.js" type="text/javascript"></script>
+	<script>
+    function loadItems(items) {
+        if (items.length === 0) {
+			document.getElementById("text-loading").innerHTML = "Du hast keine Fahrzeuge.";
+        } else {
+            $('#text-loading').hide();
+
+            var r, prop = ['name'],
+                elementLeft = document.getElementById("menu-loaded");
+            for (r = 0; r < items.length; r++) {
+                createUI(r, items[r]["name"]);
+            }
+        }
+    }
+
+    function createUI(id, name) {
+        var element = document.createElement("div");
+        element.classList.add("menu-body-option");
+        var innerElement = document.createElement('p');
+        innerElement.dataset.id = id;
+        innerElement.innerHTML = name;
+        $("#menu-loaded").append(element);
+        $(element).append(innerElement);
+    }
+</script>
+</body>
+</html>

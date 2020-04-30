@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+
+<html lang="de">
+<head>
+    
+    <script src="package://Includes/js/jquery-3.3.1.min.js"></script>
+    <script src="package://Includes/css/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="package://Includes/js/jquery-3.2.1.js"></script>
+    <script src="package://Includes/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="package://Includes/css/bootstrap.min.css">
+	<link rel="stylesheet" href="package://Includes/css/bootstrap-3.3.7/css/bootstrap.min.css">
+
+    <meta charset="utf-8" />
+</head>
+    <style>
+        body {
+            background: rgba(35, 35, 35, 0.3);
+        }
+
+        #container {
+            width: 60%;
+            max-height: 50%;
+
+            margin-top: 7%;
+            margin-left: auto;
+            margin-right: auto;
+
+            overflow-y: auto;
+
+            background-color: rgb(255, 255, 255);
+            
+            border-style: solid;
+            border-width: 5px;
+			border-radius: 10px;
+            border-color: #27903a;
+        }
+
+        #container img {
+            width: 50%;
+            height: 50%;
+
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+            display: block;
+        }
+
+        th {
+            background-color: #27903a !important;
+            border-color: #27903aa6 !important;
+        }
+
+		tr {
+			transition: 0.4s;
+		}
+
+        .selected {
+            background-color: rgb(224, 224, 224);
+			transition: 0.4s;
+        }
+
+        .fa-check {
+            color: #27903a;
+        }
+
+        .fa-times {
+            color: #c51a1a;
+        }
+
+        #pin-submit {
+            margin-left: 14px;
+            margin-right: 14px;
+            margin-top: 55px;
+            margin-bottom: 14px;
+        
+            text-align: center;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #pin {
+            margin-left: auto;
+            margin-right: auto;
+
+            width: 30%;
+        }
+		
+		input {
+			margin-bottom: 3px;
+		}
+
+    </style>
+<body>
+	<div id="container">
+        <img src="Fleeca.png"></img>
+
+        <div id="pin">
+            <h2 style="text-align: center; margin-bottom: 20px;">Erstelle ein PIN für dein Konto</h2>    
+			<input id="BankPinLogin" maxlength="4" type="password" class="form-control" placeholder="4 Stelligen Pin" onkeypress='validate(event)'>
+			<input id="BankPinLoginw" maxlength="4" type="password" class="form-control" placeholder="PIN wiederholen" onkeypress='validate(event)'>
+		</div>
+
+        <div id="pin-submit">
+			<button id="KontoRegisterButton" type="button" class="btn btn-success btn-block">Bestätigen</button>
+        </div>
+	</div>
+    <!--Scripts-->
+    <script src="package://Includes/js/bKontoRegister.js"</script>
+	       <script type="text/javascript">
+            $('.alert-danger').hide();
+        </script>
+		<script>
+		function validate(evt) {
+		  var theEvent = evt || window.event;
+		  var key = theEvent.keyCode || theEvent.which;
+		  key = String.fromCharCode( key );
+		  var regex = /[0-9]|\./;
+		  if( !regex.test(key) ) {
+			theEvent.returnValue = false;
+			if(theEvent.preventDefault) theEvent.preventDefault();
+		  }
+		}
+	</script>
+</body>
+</html>

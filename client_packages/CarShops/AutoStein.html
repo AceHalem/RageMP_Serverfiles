@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    
+    <!--<script src="../static/js/js/jquery-3.3.1.min.js"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--<script src="../static/css/bootstrap-3.3.7/js/bootstrap.min.js"></script>-->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+	<!--<link rel="stylesheet" href="../static/css/bootstrap-3.3.7/css/bootstrap.min.css">-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Autohaus.css" />
+	
+    <meta charset="utf-8" />
+</head>
+<body>
+	<div class="container">		
+	<center>
+		<div class="bar2">Autohaus - Stein</div>
+	</center>
+	<div class="content">
+			<ul class="tabs" style="margin-left:190px;">
+				<li class="tab-link current" data-tab="tab-1" style="margin-left:40px;">Home</li>
+				<li class="tab-link" data-tab="tab-2"style="margin-left:10px;">Seite 1</li>
+				<li class="tab-link" data-tab="tab-3"style="margin-left:10px;">Seite 2</li>
+			</ul>
+			
+			<!-- Willkommen Menu -->
+			<div id="tab-1" class="tab-content current">
+			<center>
+				Willkommen! mein Name ist Franzesko Stein, ich bin hier der Ladenbesitzer. Hast du ein Auto gefunden so kannst du mir gerne
+				sagen was für ein Auto es sein kann und ich fertige den Vertrag an.
+			</center>
+			</div>
+			<!-- Seite 1 -->
+			<div id="tab-2" class="tab-content">
+				<!-- Panto -->
+				<br>
+				<p>
+					<img style="float:left;margin-right:15px;"src="images/Novak.png" />
+					<div style="margin-top: -15px;">Fahrzeug Name: Novak</div>
+					<div style="">Fahrzeug Preis: $39.500</div>
+					<div style="">Fahrzeug Geschwindigkeit: Max 0Km\h</div>
+					<div style="color:red;">TIPP: Schönes Auto für das Gelände!</div>
+					<div style="margin-left:70%;margin-top:-80px;"> <button id="BuyNovak" type="button" class="btn btn-success btn-block" style="border-color: #c73636; background-color:#f54242;">Kaufen</button></div>
+					<br>
+					<br>
+				</p>
+				<hr>
+				<!-- Issi2 -->
+				<p>
+					<img style="float:left;margin-right:15px;"src="images/caracara2.png" />
+					<div style="margin-top: -5px;">Fahrzeug Name: Caracara2</div>
+					<div style="">Fahrzeug Preis: $37.500</div>
+					<div style="">Fahrzeug Geschwindigkeit: Max 0Km\h</div>
+					<div style="color:red;">TIPP: Schönes Auto für das Gelände!</div>
+					<div style="margin-left:70%;margin-top:-80px;"> <button id="BuyCaracara" type="button" class="btn btn-success btn-block" style="border-color: #c73636; background-color:#f54242;">Kaufen</button></div>
+					<br>
+					<br>
+				</p>
+				<hr>
+				<!-- Blista -->
+				<p>
+					<img style="float:left;margin-right:15px;"src="images/Drafter.png" />
+					<div style="margin-top: -5px;">Fahrzeug Name: Drafter</div>
+					<div style="">Fahrzeug Preis: $43.000</div>
+					<div style="">Fahrzeug Geschwindigkeit: Max 0Km\h</div>
+					<div style="color:red;">TIPP: Geeignet für einen tollen Auftritt!</div>
+					<div style="margin-left:70%;margin-top:-80px;"> <button id="BuyDrafter" type="button" class="btn btn-success btn-block" style="border-color: #c73636; background-color:#f54242;">Kaufen</button></div>
+					<br>
+					<br>
+				</p>
+			</div>
+			<!-- Seite 2 -->
+			<div id="tab-3" class="tab-content">
+				<!-- Washington -->
+				<br>
+				<p>
+					<img style="float:left;margin-right:15px;"src="images/Schlagen.png" />
+					<div style="margin-top: -15px;">Fahrzeug Name: Schlagen</div>
+					<div style="">Fahrzeug Preis: $46.000</div>
+					<div style="">Fahrzeug Geschwindigkeit: Max 0Km\h</div>
+					<div style="color:red;">TIPP: Geeignet für einen tollen Auftritt!</div>
+					<div style="margin-left:70%;margin-top:-80px;"> <button id="BuySchlagen" type="button" class="btn btn-success btn-block" style="border-color: #c73636; background-color:#f54242;">Kaufen</button></div>
+					<br>
+					<br>
+				</p>
+			</div>
+		</div>
+	</div><!-- container -->
+    <script src="Autohaus.js" type="text/javascript"></script>
+	<script src="buy.js" type="text/javascript"></script>
+</body>
+</html>

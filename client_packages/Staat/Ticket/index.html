@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    
+    <!--<script src="../static/js/js/jquery-3.3.1.min.js"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--<script src="../static/css/bootstrap-3.3.7/js/bootstrap.min.js"></script>-->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+	<!--<link rel="stylesheet" href="../static/css/bootstrap-3.3.7/css/bootstrap.min.css">-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="userpanel.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	
+    <meta charset="utf-8" />
+</head>
+<style>
+		#TicketBetrag {
+			background-color: black;
+			border-color: #4263f5;
+			color: #f54242;
+			border-radius: 2px;
+			text-align: center;
+		}
+		
+		#TicketText {
+			background-color: black;
+			border-color: #4263f5;
+			color: #f54242;
+			border-radius: 2px;
+			text-align: center;
+		}
+</style>
+<body>
+	<div class="container">		
+	<center>
+		<div class="bar2">Ticket ausstellen</div>
+	</center>
+	<div class="content">
+			
+			<!-- Willkommen Menu -->
+			<div id="tab-1" class="tab-content current">
+			<center>
+				<span>
+					<p>Betrag: <input id="TicketBetrag" type="text" placeholder="z.b 100" required="true"><span style="color: green;"> $</span></p>
+					</br><p>Grund:</p><textarea id="TicketText" style="resize: none; width: 100%;" rows="4"></textarea>
+					<button id="CancelBtn" type="button" class="btn btn-outline-danger">Schließen</button>
+					<button id="AcceptBtn" type="button" class="btn btn-outline-success">Bestätigen</button>
+				</span>
+			</center>
+			</div>
+		</div>
+	</div><!-- container -->
+	<script src='./Click.js'></script>
+</body>
+</html>

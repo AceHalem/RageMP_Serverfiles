@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    
+    <!--<script src="../static/js/js/jquery-3.3.1.min.js"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--<script src="../static/css/bootstrap-3.3.7/js/bootstrap.min.js"></script>-->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+	<!--<link rel="stylesheet" href="../static/css/bootstrap-3.3.7/css/bootstrap.min.css">-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="userpanel.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	
+    <meta charset="utf-8" />
+</head>
+<style>
+		#InputEndziffer {
+			background-color: black;
+			border-color: #f54242;
+			color: #f54242;
+			border-radius: 2px;
+			text-align: center;
+		}
+		
+		#AcceptBtn {
+			height: 55px;
+			width: 345px;
+			margin-top: 10px;
+		}
+</style>
+<body>
+	<div class="container">		
+	<center>
+		<div class="bar2">Zulassungsstelle</div>
+	</center>
+	<div class="content">
+			
+			<!-- Willkommen Menu -->
+			<div id="tab-1" class="tab-content current">
+			<center>
+				<span>
+					<p>Willkommen bei der Zulassungsstelle!</p>
+					<p>Hier haben Sie die Möglichkeit ihre Fahrzeuge anzumelden.</p></br>
+					<p>Kosten betragen: 500$</p></br>
+					<p>Das Nummernschild kann <span style="color: red;">NICHT</span> mehr geändert werden!</p>
+					<p></p></br>
+					<p>Geben Sie bitte hier ihre gewünschte Endziffer ein:</p>
+					<p>LS-<input id="InputEndziffer" maxlength="3" placeholder="z.b ABC" required="true"></p>
+					<button id="AcceptBtn" type="button" class="btn btn-success btn-lg btn-block">Bestätigen</button>
+				</span>
+			</center>
+			</div>
+		</div>
+	</div><!-- container -->
+	<script src='./Click.js'></script>
+</body>
+</html>

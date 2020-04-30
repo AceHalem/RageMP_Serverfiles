@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Charakter Erstellung</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e44e02321d.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="menu">
+        <div class="menu-left">
+            <div class="menu-head">
+                <h2 class="text-heading-1 text-uppercase text-center">KLEIDUNGS-</br>GESCHÄFT</h2>
+            </div>
+            <div class="menu-body">
+                <p class="text-center text-heading-2">Wähle deine Kleidung</p>
+                <div class="menu-body-option" id="optionOberteile">
+                    <div class="text-round">1</div>
+                    <span class="text-option">Oberteile</span><br>
+                </div>
+                <div class="menu-body-option" id="optionHose">
+                    <div class="text-round">2</div>
+                    <span class="text-option">Hosen</span><br>
+                </div>
+                <div class="menu-body-option" id="optionSchuhe">
+                    <div class="text-round">3</div>
+                    <span class="text-option">Schuhe</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="menu-center">
+            <p class="text-center text-rotation">
+                <span class="text-icon-rotation text-float-left" id="rotateLeft"><i
+                        class="fas fa-caret-left"></i></span>
+                <a>DREHE DEINEN CHARAKTER</a>
+                <span class="text-icon-rotation text-float-right" id="rotateRight"><i
+                        class="fas fa-caret-right"></i></span>
+            </p>
+        </div>
+    </div>
+    <div class="menu-right">
+        <div class="menu-head">
+            <h2 class="text-heading-1 text-uppercase text-center" style="padding: 17.5px;">KLEIDUNG</h2>
+        </div>
+        <div id="oberteileGUI">
+            <div class="form-group">
+                <label for="formOberteil">Wähle dein Oberteil</label>
+                <select multiple class="form-control" id="formOberteil" style="height: 350px;">
+                    <option id="Oberteil1">Oberteil#1 - 100$</option>
+                    <option id="Oberteil2">Oberteil#2 - 100$</option>
+                    <option id="Oberteil3">Oberteil#3 - 100$</option>
+                </select>
+            </div>            
+        </div>
+        <div id="hoseGUI">
+            <div class="form-group">
+                <label for="formHose">Wähle deine Hose</label>
+                <select multiple class="form-control" id="formHose" style="height: 350px;">
+                    <option id="Hose1">Hose#1 - 100$</option>
+                    <option id="Hose2">Hose#2 - 100$</option>
+                    <option id="Hose3">Hose#3 - 100$</option>
+                </select>
+            </div>    
+        </div>
+        <div id="schuheGUI">
+            <div class="form-group">
+                <label for="formSchuhe">Wähle deine Schuhe</label>
+                <select multiple class="form-control" id="formSchuhe" style="height: 350px;">
+                    <option id="Schuhe1">Schuhe#1 - 100$</option>
+                    <option id="Schuhe2">Schuhe#2 - 100$</option>
+                    <option id="Schuhe3">Schuhe#3 - 100$</option>
+                </select>
+            </div>    
+        </div>   
+        <div class="form-group">
+            <button id="formAbbrechen" type="button" class="btn btn-outline-danger">Schließen</button>
+            <button id="formKaufen" type="button" class="btn btn-outline-success">Kaufen</button>
+        </div>
+    </div>
+</div>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.1.0/knockout-min.js'></script>
+<script src='./character.js'></script>
+</body>
+</html>

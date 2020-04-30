@@ -1,0 +1,42 @@
+﻿body{
+	margin-top: 100px;
+	background-color: transparent;
+	font-family: 'Trebuchet MS', serif;
+	line-height: 1.6
+}
+.container{
+	width: 685px;
+	margin: 0 auto;
+}
+
+
+.content {
+	float: center;
+	width: 100%;
+	background-color: #fff;
+	height: auto;
+	margin-right: 30%;
+	margin-top: -0.3%;
+    padding: 25px 20px 15px 20px;
+	border: 3px solid #f54242;
+    border-radius: 3px;
+}
+
+.bar2 {
+	margin-top:25px;
+    background-color: #4A83B3;
+    background-image: linear-gradient(#f54242, #f54242);
+    box-shadow: 0 -1px 0 #f54242 inset, 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    color: #FFF;
+    line-height: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+		border-radius: 3px 3px 0px 0px;
+}
+.bar2>.close2 {
+    float: right;
+    padding-right: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}

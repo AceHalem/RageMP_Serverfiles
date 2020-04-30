@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventar</title>
+	
+	<script src="package://Includes/js/jquery-3.3.1.min.js"></script>
+    <script src="package://Includes/css/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+	
+	    
+
+    <script src="package://Includes/js/jquery-3.2.1.js"></script>
+    <script src="package://Includes/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <!--<script src="https://kit.fontawesome.com/e44e02321d.js"></script>-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <style>
+        body {
+            background: rgba(35, 35, 35, 0.3);
+        }
+
+        #container {
+            width: 60%;
+            max-height: 50%;
+
+            margin-top: 7%;
+            margin-left: auto;
+            margin-right: auto;
+
+            overflow-y: auto;
+
+            background-color: rgb(255, 255, 255);
+            
+            border-style: solid;
+            border-width: 5px;
+			border-radius: 10px;
+            border-color: #27903a;
+        }
+
+        #container img {
+            width: 50%;
+            height: 50%;
+
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 15px;
+            margin-bottom: 5px;
+
+            display: block;
+        }
+
+        th {
+            background-color: #27903a !important;
+            border-color: #27903aa6 !important;
+        }
+
+		tr {
+			transition: 0.4s;
+		}
+
+        .selected {
+            background-color: rgb(224, 224, 224);
+			transition: 0.4s;
+        }
+
+        .fa-check {
+            color: #27903a;
+        }
+
+        .fa-times {
+            color: #c51a1a;
+        }
+
+        #btn-group {
+            margin-left: 14px;
+            margin-right: 14px;
+            margin-top: 14px;
+            margin-bottom: 0px;
+            text-align: center;
+        }
+
+        p {
+			font-size: 17px;
+            color: black;
+            padding-height: 13px;
+            padding-left: 13px;
+            font-weight: bold; 
+			text-align: center;
+        }
+		
+		.nav-link {
+			color: #27903a;
+		}
+		
+		.nav-link:hover {
+			color: #1f782f;
+		}
+		
+		.form-control:focus{
+			color:#495057;
+			background-color:#fff;
+			border-color:#27903a;
+			outline:0;
+			box-shadow:0px 0px 0px 0.2rem rgba(31, 120, 47,0.25);
+		} 
+		
+		.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+			border-color:#1f782f #1f782f #fff;
+			color: #1f782f;
+		} 
+		
+		.card-header {
+			border-bottom: 1px solid #1f782f;
+		}
+		
+		.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+			border-color:#1f782f #1f782f #fff;
+		} 
+    </style>
+</head>
+<body>
+	<div id="container">
+        <img src="Fleeca.png"></img>
+		<p>Guthaben: <span id="bankmoney">0</span><span style="color: green;">$</span></p>
+            <div class="card-body">
+			<div class="card-header tab-card-header">
+                <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                    <li class="nav-item active">
+                        <a class="nav-link active show" id="deposit-tab" data-toggle="tab" href="#deposit" role="tab">Geld Einzahlen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="withdraw-tab" data-toggle="tab" href="#withdraw" role="tab">Geld Abheben</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" id="ueber-tab" data-toggle="tab" href="#ueberweisen" role="tab">Überweisung</a>
+                    </li>
+					
+                </ul>
+			</div>	
+
+                <div class="tab-content" id="myTabContent">
+
+                    <div class="tab-pane fade show active" id="deposit" role="tabpanel">
+						<form action=""> 
+                        <div class="row ml-10 mt-3 mr-10" style="display: block; margin-left:auto; margin-right:auto;">
+                            <div id="deposit-container-infobox" class="d-none mt-3 mb-3 form-control border bg-info">
+                                <div id="deposit-message-infobox" class="text-white" style="text-align:center"></div>
+                            </div>
+                            <div class="mt-3 mb-3 form-control border bg-success">
+                                <div class="text-white" style="text-align:center">Hier können sie auch eine individuelle Summe einzahlen!</div>
+                            </div>
+                            <div class="input-group mb-3">
+                                <input id="EinzahlenSumme" type="number" class="form-control" placeholder="z.b 1000" required="true" onkeypress='validate(event)' >
+                            </div>
+							<div id="btn-group">
+								<button id="EinzahlenBtn" type="button" class="btn btn-success btn-lg btn-block">Bestätigen</button>
+							</div>
+						</form>	
+                        </div>
+                        
+                    </div>
+                    <div class="tab-pane fade" id="withdraw" role="tabpanel">
+					<form action=""> 
+                        <div id="withdraw-container-infobox" class="d-none mt-3 mb-3 form-control border bg-info">
+                            <div id="withdraw-message-infobox" class="text-white" style="text-align:center"></div>
+                        </div>
+                        <div class="mt-3 mb-3 form-control border bg-success">
+                            <div class="text-white" style="text-align:center">Hier koennen sie auch eine individuellen Summe abheben!</div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input id="AuszahlenSumme" type="number" class="form-control" placeholder="z.b 1000" required="true" onkeypress='validate(event)' >
+                        </div>
+						<div id="btn-group">
+							<button id="AuszahlenBtn" type="button" class="btn btn-success btn-lg btn-block">Bestätigen</button>
+						</div>
+					</form> 	
+                    </div>
+                    <div class="tab-pane fade" id="ueberweisen" role="tabpanel">
+					<form action=""> 
+                        <div class="mt-3 mb-3 form-control border bg-success">
+                            <div class="text-white" style="text-align:center">Geben Sie hier den Namen der Person an an denen Sie das Geld überweisen möchten.</div>
+                        </div>
+						<div class="input-group mb-3">
+                            <input id="UeberweisenNamen" type="text" class="form-control"  maxlength="30" placeholder="z.B NickPowa" required="true">
+                        </div>
+                        <hr />
+                        <div id="withdraw-container-infobox" class="d-none mt-3 mb-3 form-control border bg-info">
+                            <div id="withdraw-message-infobox" class="text-white" style="text-align:center"></div>
+                        </div>
+                        <div class="mt-3 mb-3 form-control border bg-success">
+                            <div class="text-white" style="text-align:center">Geben Sie hier bitte den gewünschten Betrag an.</div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input id="UeberweisenSumme" type="number" class="form-control" maxlength="10" placeholder="z.b 1000" required="true" onkeypress='validate(event)' >
+                        </div>
+						<div id="btn-group">
+							<button id="UeberweisenBtn" type="button" class="btn btn-success btn-lg btn-block">Bestätigen</button>
+						</div>
+						</form>
+                    </div>
+                </div>
+				<div id="btn-group">
+					<button type="button" class="btn btn-success btn-block" style="background-color: #f54242; border-color: #f54242;">Schließen</button>
+				</div>
+            </div>
+	</div>
+	
+    <!--Scripts-->
+    <script src="package://Includes/js/bKonto.js"</script>
+	       <script type="text/javascript">
+            $('.alert-danger').hide();
+        </script>
+			<script>
+		$("#btn-group button").click(function () {
+			mp.trigger("closebterminal");
+		});
+		
+		function validate(evt) {
+		  var theEvent = evt || window.event;
+		  var key = theEvent.keyCode || theEvent.which;
+		  key = String.fromCharCode( key );
+		  var regex = /[0-9]|\./;
+		  if( !regex.test(key) ) {
+			theEvent.returnValue = false;
+			if(theEvent.preventDefault) theEvent.preventDefault();
+		  }
+		}
+	</script>
+</body>
+</html>

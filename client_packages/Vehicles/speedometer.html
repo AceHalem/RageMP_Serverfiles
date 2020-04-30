@@ -1,0 +1,119 @@
+﻿<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+<link rel="stylesheet" href="package://Includes/fa/css/all.min.css">
+
+<style>
+    .fas {
+        font-size: 1vw;
+        margin-left: 0.25vw;
+    }
+    .Blink {
+        animation: blinker 1.5s infinite alternate;  
+    }
+    @keyframes blinker {  
+        from {color: white;}
+        to {color: red;}
+    }
+
+    .bar0, .bar1, .bar2, .bar3 {
+        background: rgba(0,0,0,0.8);
+        position: absolute;
+        padding: 0.25vw;
+        color: #fff;
+        width: 8vw;
+        height: 1vw;
+        border-radius: 0.1vw;
+        bottom: 6.2vw;
+        right: 45vw;
+    }
+    .bar1 {
+        bottom:  4.6vw;
+    }
+
+    .bar2 {
+        bottom: 3.0vw;
+    }
+    .bar3 {
+        bottom: 1.4vw;
+    }
+    .kmh {
+        position: absolute;
+        right: 1.25vw;
+        font-family: 'Open Sans';
+        font-size: 0.75vw;
+        top: 0.2vw;
+        font-weight: 600;
+        letter-spacing: -0.01vw;
+    }
+    .line1 {
+        position: absolute;
+        background: #fff;
+        width: 6vw;
+        height: 0.4vw;
+        top: 0.55vw;
+        border-radius: 5vw;
+        left: 2vw;
+    }
+    .inline1 {
+        background: #fab812;
+        width: 0%;
+        height: 100%;
+        z-index: 1;
+        border-radius: 5vw;
+    }
+</style>
+
+<body style="display: none;" oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+<div id="barC" class="bar0" style="display: none;" >
+    <i class="fas fa-tachometer-alt" style="color:yellow"></i>
+    <div id="kmhC" class="kmh">0 KM/H</div>
+</div>
+
+<div class="bar1">
+    <i class="fas fa-tachometer-alt"></i>
+    <div id="kmh" class="kmh">0 KM/H</div>
+</div>
+
+<div class="bar2">
+    <i class="fas fa-road"></i>
+    <div id="km" class="kmh">0 KM</div>
+</div>
+
+<div class="bar3">
+    <i id="gasIcon" class="fas fa-gas-pump"></i>
+    <div class="line1">
+        <div id="gas" class="inline1"></div>
+    </div>
+</div>
+
+<script>
+    function update(speed) {			
+        document.getElementById('kmh').innerHTML = speed + " KM/H";
+    }
+    function updateG(gas, km) {			
+        if (gas < 15) {
+            document.getElementById('gasIcon').classList.add("Blink");
+        } else {
+            document.getElementById('gasIcon').classList.remove("Blink");  
+        }
+        document.getElementById('gas').style.width = gas + "%";
+        document.getElementById('km').innerHTML = km + " KM";
+    }
+    function hide() {
+        document.body.style.display = "none";
+        hideC()
+    }
+    function show() {
+        document.body.style.display = "block";
+    }
+
+    function hideC() {
+        document.getElementById('barC').style.display = "none";
+    }
+    function showC() {
+        document.getElementById('barC').style.display = "block";
+    }
+    function updateC(speed) {			
+        document.getElementById('kmhC').innerHTML = speed + " KM/H";
+    }
+</script>
+</body>

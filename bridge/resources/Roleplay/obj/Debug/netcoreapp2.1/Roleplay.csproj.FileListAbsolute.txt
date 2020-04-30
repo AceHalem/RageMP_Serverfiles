@@ -1,0 +1,9 @@
+D:\Projekte\ReallifeV-dev\bridge\resources\Roleplay\bin\Debug\netcoreapp2.1\Roleplay.deps.json
+D:\Projekte\ReallifeV-dev\bridge\resources\Roleplay\bin\Debug\netcoreapp2.1\Roleplay.dll
+D:\Projekte\ReallifeV-dev\bridge\resources\Roleplay\bin\Debug\netcoreapp2.1\Roleplay.pdb
+D:\Projekte\ReallifeV-dev\bridge\resources\Roleplay\obj\Debug\netcoreapp2.1\Roleplay.csprojAssemblyReference.cache
+D:\Projekte\ReallifeV-dev\bridge\resources\Roleplay\obj\Debug\netcoreapp2.1\Roleplay.csproj.CoreCompileInputs.cache
+D:\Projekte\ReallifeV-dev\bridge\resources\Roleplay\obj\Debug\netcoreapp2.1\Roleplay.AssemblyInfoInputs.cache
+D:\Projekte\ReallifeV-dev\bridge\resources\Roleplay\obj\Debug\netcoreapp2.1\Roleplay.AssemblyInfo.cs
+D:\Projekte\ReallifeV-dev\bridge\resources\Roleplay\obj\Debug\netcoreapp2.1\Roleplay.dll
+D:\Projekte\ReallifeV-dev\bridge\resources\Roleplay\obj\Debug\netcoreapp2.1\Roleplay.pdb

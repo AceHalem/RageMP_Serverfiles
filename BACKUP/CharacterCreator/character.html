@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Charakter Erstellung</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e44e02321d.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="menu">
+        <div class="menu-left">
+            <div class="menu-head">
+                <h2 class="text-heading-1 text-uppercase text-center">CHARAKTER<br>ERSTELLUNG</h2>
+            </div>
+            <div class="menu-body">
+                <p class="text-center text-heading-2">Erstelle deinen Charakter</p>
+                <div class="menu-body-option" id="optionGeburtsurkunde">
+                    <div class="text-round">1</div>
+                    <span class="text-option">Geburtsurkunde</span><br>
+                </div>
+                <div class="menu-body-option" id="optionEltern">
+                    <div class="text-round">2</div>
+                    <span class="text-option">Eltern</span><br>
+                </div>
+                <div class="menu-body-option" id="optionAussehen">
+                    <div class="text-round">3</div>
+                    <span class="text-option">Aussehen</span>
+                </div>
+                <div class="menu-body-option" id="optionGesicht">
+                    <div class="text-round">4</div>
+                    <span class="text-option">Gesicht</span>
+                </div>
+                <div class="menu-body-option" id="optionBehaarung">
+                    <div class="text-round">5</div>
+                    <span class="text-option">Behaarung</span>
+                </div>
+                <div class="menu-body-option" id="optionMakeup">
+                    <div class="text-round">6</div>
+                    <span class="text-option">Makeup</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="menu-center">
+            <p class="text-center text-rotation">
+                <span class="text-icon-rotation text-float-left" id="rotateLeft"><i
+                        class="fas fa-caret-left"></i></span>
+                <a>DREHE DEINEN CHARAKTER</a>
+                <span class="text-icon-rotation text-float-right" id="rotateRight"><i
+                        class="fas fa-caret-right"></i></span>
+            </p>
+        </div>
+    </div>
+    <div class="menu-right">
+        <div class="menu-head">
+            <h2 class="text-heading-1 text-uppercase text-center" style="padding: 17.5px;">OPTIONEN</h2>
+        </div>
+        <div id="geburtsurkundenGUI">
+            <form>
+
+                <div class="form-group">
+                    <label for="formVorname">Vorname</label>
+                    <input type="name" class="form-control" id="formVorname" placeholder="Max">
+                </div>
+                <div class="form-group">
+                    <label for="formNachname">Nachname</label>
+                    <input type="name" class="form-control" id="formNachname" placeholder="Mustermann">
+                </div>
+                <div class="form-group">
+                    <label for="formGeschlecht">Geschlecht</label>
+                    <select id="formGeschlecht" class="form-control">
+                        <option>Männlich</option>
+                        <option>Weiblich</option>
+                    </select>
+                </div>
+                <!-- datepicker -->
+                <div class="form-group">
+                    <label for="formGeburtsdatum">Geburtsdatum</label>
+                    <input type="name" class="form-control" id="formGeburtsdatum" placeholder="01.01.2000">
+                </div>
+            </form>
+        </div>
+        <div id="elternGUI">
+            <div class="form-group">
+                <label for="formMutter">Mutter</label>
+                <select multiple class="form-control" id="formMutter">
+                    <option>test</option>
+                    <option>test</option>
+                    <option>test</option>
+                    <option>test</option>
+                    <option>test</option>
+                    <option>test</option>
+                    <option>test</option>
+                    <option>test</option>
+                    <option>test</option>
+                    <option>test</option>
+                    <option>test</option>
+                    <option>test</option>
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="formVater">Vater</label>
+                <select multiple class="form-control" id="formVater">
+                    <option>test</option>
+                    <option>test</option>
+                    <option>test</option>
+                    <option>test</option>
+                    <option>test</option>
+                    <option>test</option>
+                    <option>test</option>
+                    <option>test</option>
+                    <option>test</option>
+                    <option>test</option>
+                    <option>test</option>
+                    <option>test</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="formAehnlichkeit">Ähnlichkeit: <span id="formAehnlichkeitCount"></span></label>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="formAehnlichkeit">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="formHautton">Hautton: <span id="formHauttonCount"></span></label>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="formHautton">
+                </div>
+            </div>
+            <div class="form-group">
+                <button id="formElternRandomize" type="button" class="btn btn-outline-danger">Randomize</button>
+            </div>
+        </div>
+        <div id="aussehenGUI">
+            <div class="form-group">
+                <label for="formSchönheitsfehler">Schönheitsfehler <span id="formSchönheitsfehlerCount"></span></label>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="formSchönheitsfehler">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="formSonnenbrand">Sonnenbrand: <span id="formSonnenbrandCount"></span></label>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="formSonnenbrand">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="formAlterung">Alterung: <span id="formAlterungCount"></span></label>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="formAlterung">
+                </div>
+            </div>
+        </div>
+        <div id="gesichtGUI">
+            <div class="form-group">
+                <label for="formMuttermalSommersprossen">Sommersprossen: <span
+                        id="formMuttermalSommersprossenCount"></span></label>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="formMuttermalSommersprossen">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="formAugenbrauen">Augenbrauen: <span id="formAugenbrauenCount"></span></label>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="formAugenbrauen">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="formRoetungen">Rötungen: <span id="formRoetungenCount"></span></label>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="formRoetungen">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="formGesichtsfarbe">Gesichtsfarbe: <span id="formGesichtsfarbeCount"></span></label>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="formGesichtsfarbe">
+                </div>
+            </div>
+        </div>
+        <div id="behaarungGUI">
+            <div class="form-group">
+                <label for="formGesichtsbehaarung">Gesichtsbehaarung: <span
+                        id="formGesichtsbehaarungCount"></span></label>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="formGesichtsbehaarung">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="formBrustbehaarung">Brustbehaarung: <span id="formBrustbehaarungCount"></span></label>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="formBrustbehaarung">
+                </div>
+            </div>
+        </div>
+        <div id="makeupGUI">
+            <div class="form-group">
+                <label for="formMakeup">Makeup: <span id="formMakeupCount"></span></label>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="formMakeup">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="formLippenstift">Lippenstift: <span id="formLippenstiftCount"></span></label>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="formLippenstift">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.1.0/knockout-min.js'></script>
+<script src='./character.js'></script>
+</body>
+</html>

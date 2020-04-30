@@ -1,0 +1,14 @@
+{
+  "maxplayers": 100,
+  "name": "[de][alpha][voice]Test Server",
+  "gamemode": "reallife",
+  "language": "ger",
+  "stream-distance": 500.0,
+  "sync-rate": 60,
+  "announce": true,
+  "csharp": true,
+  "node": false,
+  "port": 22005,
+  "voice-chat": true,
+  "voice-chat-sample-rate": 48000
+}
